@@ -7,6 +7,10 @@ body{
     font-family: 'Source Sans 3', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .top_wrapper{
     overflow: hidden;
     background-color: #001d37;
