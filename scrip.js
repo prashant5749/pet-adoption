@@ -2,7 +2,7 @@ const template = document.querySelector("#pet-card-template")
 const wrapper = document.createDocumentFragment()
 
 async function petArea(){
-    const petPromise = await fetch("https://learnwebcode.github.io/bootcamp-pet-data/pets.json")
+    const petPromise = await fetch("https://clinquant-piroshki-c10d48.netlify.app/.netlify/functions/pets")
     const petData = await petPromise.json()
     petData.forEach(pet => {
        const clone = template.content.cloneNode(true)
